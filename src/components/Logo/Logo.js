@@ -3,7 +3,7 @@ import burgerLogo from '../../assets/images/burger-logo.png'; //So Webpack knows
 import classes from './Logo.css'
 
 const logo = (props) => (
-  <div className={classes.Logo}>
+  <div className={classes.Logo} style={{height: props.height}}>
     <img src={burgerLogo} alt="MyBurger"></img>
   </div>
 );
